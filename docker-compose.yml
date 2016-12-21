@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  minecraft-server:
+    image: itzg/minecraft-server
+    container_name: minecraft-server
+    ports:
+      - "25565:25565"
+
+    environment:
+      EULA: "TRUE"
+      TYPE: "BUKKIT" #(SPIGOT|BUKKIT)
+      VERSION: '1.8' #(SNAPSHOT|LATEST|V.ID)
+      MOTD: 'Welcome to the UPGG Minecraft Server'
+      
+    tty: true
+    stdin_open: true
+    restart: always
