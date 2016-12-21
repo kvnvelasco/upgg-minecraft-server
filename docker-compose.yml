@@ -11,7 +11,7 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: "SPIGOT" #(SPIGOT|BUKKIT)
-      VERSION: '1.11' #(SNAPSHOT|LATEST|V.ID)
+      VERSION: '1.10.2' #(SNAPSHOT|LATEST|V.ID)
       MOTD: 'Welcome to the UPGG Minecraft Server'
     tty: true
     stdin_open: true
